@@ -11,7 +11,7 @@ export const signup = (username, password) => {
         throw new Error('Password should have alteast 8 characters.')
     }
 
-    var pattern =  /^[A-Za-z]\w{7,14}$/
+    const pattern =  /^[A-Za-z]\w{7,14}$/
     if(pattern.test(password)) {
         throw new Error('Password must contain alphanumeric characters.');
     }
